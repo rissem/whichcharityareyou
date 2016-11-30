@@ -1,29 +1,46 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="/js/init.js"></script>
 </head>
 <body>
   <h1>Hello World</h1>
   <div id="question">
     <form>
       <fieldset class="form-group">
-        <legend>Radio buttons</legend>
+        <legend id="questionText">Radio buttons</legend>
         <div class="form-check">
           <label class="form-check-label">
             <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            Option one is this and that&mdash;be sure to include why it is great
+            <div id="answer1">Option one is this and that&mdash;be sure to include why it is great</div>
           </label>
         </div>
         <div class="form-check">
         <label class="form-check-label">
             <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-            Option two can be something else and selecting it will deselect option one
+            <div i="answer2">Option two can be something else and selecting it will deselect option one</div>
           </label>
         </div>
         <div class="form-check disabled">
         <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-            Option three is disabled
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+            <div id="answer3">Answer 3</div>
+          </label>
+        </div>
+        <div class="form-check disabled">
+        <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4">
+            <div id="answer4">Option four is disabled</div>
           </label>
         </div>
       </fieldset>
